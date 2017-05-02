@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+        <variable name="track" type="kr.co.triggers.yolo.domain.Track"/>
+
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/trackItemLayout"
+        android:padding="@dimen/explore_item_padding">
+
+        <ImageView
+            android:id="@+id/imageViewThumbnail"
+            android:layout_width="@dimen/youtube_thumbnail_width"
+            android:layout_height="@dimen/youtube_thumbnail_height"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/track_item_space"
+            android:padding="@dimen/track_item_description_padding"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTrackTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{track.title}"
+                android:textAppearance="@style/AppTheme.TextAppearance.Subtitle"/>
+
+            <me.kaede.tagview.TagView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tagViewInformation"
+                app:textPaddingTop="@dimen/tag_inner_padding_updown"
+                app:textPaddingBottom="@dimen/tag_inner_padding_updown"
+                app:textPaddingLeft="@dimen/tag_inner_padding_side"
+                app:textPaddingRight="@dimen/tag_inner_padding_side">
+
+            </me.kaede.tagview.TagView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewLikeTrack"
+            android:layout_width="@dimen/button_size_secondary"
+            android:layout_height="@dimen/button_size_secondary"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="kr.co.triggers.yolo.layer.entry.fragment.menu.MenuView"/>
+        <variable name="view" type="kr.co.triggers.yolo.layer.entry.fragment.menu.MenuView"/>
+
+    </data>
+
+    <eightbitlab.com.blurview.BlurView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/buttonClose"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/ic_launcher"
+                android:onClick="@{() -> view.pop()}"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/commandFiesta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:clickable="true"
+                android:onClick="@{() -> view.show(MenuView.MODE_FIESTA)}"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_primary"
+                    android:layout_height="@dimen/button_size_primary"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/fragment_menu_space"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/menu_fiesta"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commandArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:clickable="true"
+                android:onClick="@{() -> view.show(MenuView.MODE_ARTIST)}"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_primary"
+                    android:layout_height="@dimen/button_size_primary"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/fragment_menu_space"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/menu_artist"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commandNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:clickable="true"
+                android:onClick="@{() -> view.show(MenuView.MODE_NOTIFICATION)}"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_primary"
+                    android:layout_height="@dimen/button_size_primary"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/fragment_menu_space"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/menu_notification"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commandProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_menu_space"
+                android:clickable="true"
+                android:onClick="@{() -> view.show(MenuView.MODE_PROFILE)}"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_primary"
+                    android:layout_height="@dimen/button_size_primary"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/fragment_menu_space"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/menu_profile"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </eightbitlab.com.blurview.BlurView>
+
+</layout>

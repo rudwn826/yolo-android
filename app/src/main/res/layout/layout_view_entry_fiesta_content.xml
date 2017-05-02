@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View"/>
+        <import type="kr.co.triggers.yolo.util.Converter"/>
+
+        <variable name="view" type="kr.co.triggers.yolo.layer.entry.EntryView"/>
+        <variable name="fiesta" type="kr.co.triggers.yolo.domain.Fiesta"/>
+
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:onClick="@{() -> view.slideup()}"
+        android:orientation="vertical"
+        android:padding="@dimen/content_padding"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_sheet_peek_height"
+            android:background="@color/app_background_color"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/cardview_radius">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/fiesta_preview_padding_updown"
+                android:paddingBottom="@dimen/fiesta_preview_padding_updown"
+                android:paddingLeft="@dimen/fiesta_preview_padding_side"
+                android:paddingRight="@dimen/fiesta_preview_padding_side"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/label_fiesta_preview_header_date"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text='@{Converter.getMonth(fiesta.startTime), default=SEP}'
+                                android:textAppearance="@style/AppTheme.TextAppearance.Title"
+                                android:includeFontPadding="false"/>
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text='@{Converter.getDuration(fiesta.startTime, fiesta.endTime), default="10-12"}'
+                                android:textAppearance="@style/AppTheme.TextAppearance.Subtitle"
+                                android:includeFontPadding="false"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/fiesta_preview_separator_padding_side"
+                        android:paddingRight="@dimen/fiesta_preview_separator_padding_side"
+                        android:src="@drawable/drawable_separator_normal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="@string/label_fiesta_preview_header_name_place"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{fiesta.name}"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Title"
+                                android:includeFontPadding="false"/>
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text='@{fiesta.location}'
+                                android:textAppearance="@style/AppTheme.TextAppearance.Subtitle"
+                                android:includeFontPadding="false"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/fiesta_preview_separator_padding_side"
+                        android:paddingRight="@dimen/fiesta_preview_separator_padding_side"
+                        android:src="@drawable/drawable_separator_normal"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/button_size_primary"
+                            android:layout_height="@dimen/button_size_primary"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_launcher"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_space" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/cardview_radius">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp">
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fiesta_photos_height"/>
+
+                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="bottom" />
+
+                </FrameLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <me.kaede.tagview.TagView
+                    android:id="@+id/tagViewInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:textPaddingTop="@dimen/tag_inner_padding_updown"
+                    app:textPaddingBottom="@dimen/tag_inner_padding_updown"
+                    app:textPaddingLeft="@dimen/tag_inner_padding_side"
+                    app:textPaddingRight="@dimen/tag_inner_padding_side"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@{fiesta.description}"
+                    android:textAppearance="@style/AppTheme.TextAppearance.Content"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/content_space" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_space" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/cardview_radius">
+
+            <LinearLayout
+                android:id="@+id/buttonPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/fiesta_purchase_padding_updown"
+                android:paddingBottom="@dimen/fiesta_purchase_padding_updown"
+                android:clickable="true"
+                android:onClick="@{() -> view.purchase(fiesta)}"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_secondary"
+                    android:layout_height="@dimen/button_size_secondary"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/placeholder_fiesta_purchase"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_space" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/app_background_color"
+            app:cardCornerRadius="@dimen/cardview_radius">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/placeholder_fiesta_lineup"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewLineup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:listSelector="@null"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</layout>

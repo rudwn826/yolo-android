@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable name="perform" type="kr.co.triggers.yolo.domain.Perform"/>
+
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/artist_list_item_height"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewArtistProfile"
+            android:layout_width="@dimen/artist_profile_thumbnail_size"
+            android:layout_height="@dimen/artist_profile_thumbnail_size"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/color_primary_blue"/>
+
+        <TextView
+            android:id="@+id/textViewArtistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@{perform.artist.name}"
+            android:textAppearance="@style/AppTheme.TextAppearance.Content"/>
+
+    </LinearLayout>
+
+</layout>

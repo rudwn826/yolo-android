@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable name="artist" type="kr.co.triggers.yolo.domain.Artist"/>
+
+    </data>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="@dimen/artist_collection_item_width"
+        android:layout_height="@dimen/artist_collection_item_height">
+
+        <kr.co.triggers.yolo.view.SquareImageView
+            android:id="@+id/imageViewArtistProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:alpha="0.5"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/artist_collection_bottom_width"
+                android:layout_height="@dimen/artist_collection_bottom_height"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/artist_collection_padding_updown"
+                android:paddingLeft="@dimen/artist_collection_padding_left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@{artist.name, default=Artist}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/artist_collection_space_height"/>
+
+                <me.kaede.tagview.TagView
+                    android:id="@+id/tagViewInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    app:textPaddingTop="@dimen/tag_inner_padding_updown"
+                    app:textPaddingBottom="@dimen/tag_inner_padding_updown"
+                    app:textPaddingLeft="@dimen/tag_inner_padding_side"
+                    app:textPaddingRight="@dimen/tag_inner_padding_side"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+</layout>

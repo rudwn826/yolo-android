@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable name="fiesta" type="kr.co.triggers.yolo.domain.Fiesta"/>
+        <variable name="view" type="kr.co.triggers.yolo.layer.entry.EntryView"/>
+
+    </data>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewFiestaFacade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:onClick="@{() -> view.slideup()}"/>
+
+    </FrameLayout>
+
+
+</layout>

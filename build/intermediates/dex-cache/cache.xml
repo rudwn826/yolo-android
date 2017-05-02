@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/android/databinding/baseLibrary/2.2.0/baseLibrary-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e1d81f36ef9a5803689b3e888eb93a8759a17be0">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/baseLibrary-2.2.0_78d10c59095dc704044b039733d8808f01f081a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_5a9ddb3c49d03148824bd3808c6afbc9afe14e39.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.6.0_490fe07ee05d299971e0f91424c68906115bdcae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/Library/Android/sdk/build-tools/24.0.2/renderscript/lib/renderscript-v8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="05668b8cd6c7b07f152b6a5b4c6cff620817ba0f">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/renderscript-v8_c532577d2fc6cde8909561142c74cdf20ce61791.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="86da97c30f50a67ddabe2cf7040713ad17153fce">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.11.0_2f5d5e3e1afd1c503829b90f8352f4de75ef5cad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/library-2.4.0_5738d74c75cd15fb8ecc1905cd4c16e5c3282906.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_75d7df3bf2aacb817bb533065f1ae46445dd1018.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.2.0/6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c/okhttp-urlconnection-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.2.0_c0e13fa2000985613b33b5f7571e0935589fe306.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.databinding-library-1.2.1_2a14c0010880d83326d7d2d4f62635711be50f6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.2.1_b64c1f0f61d88d2204f18629548a63382149381f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/converter-gson-2.0.2_0074fb081de6f61dcdf9407c6e7cc749cd922f6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.jakewharton.picasso/picasso2-okhttp3-downloader/1.0.2/74a586d03a233d356290983d1ef23a64c1d122b2/picasso2-okhttp3-downloader-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="74a586d03a233d356290983d1ef23a64c1d122b2">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/picasso2-okhttp3-downloader-1.0.2_3a593c3b42ba9d0547bf9417bf2f6e6747c6857c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_d56b6f3ac55a4737759084303d228ee8a4b746ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_440e8651a213dacfce59a0b7a6bf1910239a592f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_9331df0e80edb8a3820f240324ae72bb2dbb0c6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.github.kaedea/Android-Cloud-TagView-Plus/b546a5f073/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e8515bbfac9b48a999c1fe9e468bc699a5233870">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.github.kaedea-Android-Cloud-TagView-Plus-b546a5f073_483508ae920503eef529877b0ab8c66274e5ad25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.facebook.rebound/rebound/0.3.8/c8b90640dddaf1e7ad75d7cb00b09a44b3788f7e/rebound-0.3.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c8b90640dddaf1e7ad75d7cb00b09a44b3788f7e">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/rebound-0.3.8_eea1f85d230c28c554ea450ad2bd720a83d7f876.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_e14e99fb8db3d9f1fcaf8f13fbd9071dfed08e17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.0.2/a60c039ba54c73d1133b72178e1b04133c73d13d/adapter-rxjava-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a60c039ba54c73d1133b72178e1b04133c73d13d">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.0.2_077c1c99595afd0cae5e410dab39e76e23924b69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_cc946c616b3b36ef062c778d420678d1f1f56895.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/1.2.0/5e4042f9e0d39e0d01d4a8661d01e24995b2cbef/realm-annotations-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5e4042f9e0d39e0d01d4a8661d01e24995b2cbef">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/realm-annotations-1.2.0_44455c7fbe91dd2d2bff917f9fc0d3be0085390d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.6/2586312cd2b8a511e4c6236736f5a039fc0f2273/rxjava-1.1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2586312cd2b8a511e4c6236736f5a039fc0f2273">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/rxjava-1.1.6_0bab4c031e8225f5478ecf71fad3acca539e7af2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/io.realm/realm-android-library/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="15a3e65c92d3cde64c725dba8d590a1123d2d213">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/io.realm-realm-android-library-1.2.0_3f410eebab980fb4fc60447c9980ce309c795bfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.tsengvn/typekit/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ebfb8784f12b4f1e00026c373ed30c0f7b74ca68">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.tsengvn-typekit-1.0.1_630c01395282a1a7b27bb4e6b406ae9b14c6a010.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bd11b3899f275668a9355f19cea2c2320f5f9d14">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.6.0_51d66c329739f3868aad14deff9ade107c57a8fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_dd745721783fb21c5fd72ff86cddf68f88772ab3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_0863d0311bbcb4f9c8e9ca1e1cd4e24a4aaf6754.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_987c5966bab576625c96cbda487336ebf4d90df0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/jp.co.cyberagent.android.gpuimage/gpuimage-library/1.4.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="eb9f1cef6b29492df701111c555908cb53dece35">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/jp.co.cyberagent.android.gpuimage-gpuimage-library-1.4.1_2789cd6c629b266c81d95f20fefc1e20e334ff96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-2.1.0_26e6085b877d010a50be9f340d32d40cb7a108d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/javax.inject-1_daf4a4e15b206cef714e6df9ef586f16e0c4162b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.2.0/a56f28d5b7fab623c6c1d2afa08dd496d873ac21/logging-interceptor-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a56f28d5b7fab623c6c1d2afa08dd496d873ac21">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.2.0_c72eaa1594abb3737e739bf2dce738cc499dc2b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/okio-1.6.0_23cfb2d474aa2ede221a517da3379b8bbaa9d4e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.daimajia.slider/library/1.1.5/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.daimajia.slider-library-1.1.5_7d5aae60d4254fa0ee9269fd377250b1ad7e3c6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.theartofdev.edmodo/android-image-cropper/2.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1a32a39a9fcae3d354a312cdb78c18159fa702e6">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.theartofdev.edmodo-android-image-cropper-2.3.1_1e8015222408c7bd656eddaf0ea49592baf0b819.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_ca87ac6aa00c0277345bcada4f1b4704c07d884c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.2.1_8c9a6d18bc27dafdf9ceff1ea6eeb705eaba6bc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_11616a31b4c020416a72113ad33b874a71842f61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.6.0_1b91d49c5ef8edd3b5713e67fc04c17d9474f620.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/jp.wasabeef/picasso-transformations/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3fb1fe781490fcf9fa47ee2c268279f777266a6a">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/jp.wasabeef-picasso-transformations-2.1.0_5b666ea732bea31b27463e24b11cdce74f71d13e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_9c2d18db6546042414f7e344919d1b519047d665.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="614b2ffd04818e865e1c02cc149c6b92e518e862">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.6.0_53ea007548e3ea9f87d1071eeec90e2fbb027275.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_2cfb0e3abc901d8ca97e79e2c2550d83ce575a81.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0e5a66a941515d873a34065fe44fbba6ef422a1b">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-23.2.1_646a256dd8e973c93a6905eb9c0d0a58ddcec643.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.getkeepsafe.relinker/relinker/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="264f0bc4c0680cfe7a60fea1f12a43f1ab48e7c8">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.getkeepsafe.relinker-relinker-1.2.1_8368d4e2af3bda48c26d4db6397f8141f69a4f8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.eightbitlab/blurview/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ffc56608c09d8ffe702c669546d70b77bf027740">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.eightbitlab-blurview-1.2.0_bbb701e26adfeea3188c09df2c4342c6eafe87ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/retrofit-2.0.2_4ab6ba7c2b4655eaa8f07807d75b2ee9c19ab063.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_9dc5536e7cb0811f16d308e047db2206ff279b08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_0b3a3d7474bd8fada442878a1d89cc131b8861e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.6.0_ce621ede92b7307423a50e840c77703ea72eafe0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup/otto/1.3.8/cf615176cd1177edf71d3c9605f8dc148fede6be/otto-1.3.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="cf615176cd1177edf71d3c9605f8dc148fede6be">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/otto-1.3.8_441836fd9013e02053bc7cb21f428797a45604a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_ab777c7287136fab034a9426a8e27ffe3df8a9c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_e95e954330bda136a3a0386836bd86d8eb27639c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0_358ccc3c3bdf856f40ad9ea55a357964af1c79cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/gson-2.6.1_541080a6d3466d212f7d9f952f07780aea1acafb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/libs/YouTubeAndroidPlayerApi.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/YouTubeAndroidPlayerApi_a0c8587b3cfbca9ce3abf1e42fd1172875e3bfae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0_4da5db0be9a7d9e5df47381e2f0ce705a32bfcc1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.databinding-adapters-1.2.1_9ac3d5fc4e62c2927de881a3fac47bb1e64ef464.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_c3aa8c16e6c656fb924c99a8ba41e14b0b8b01ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d39f676be8400123523882d189a1d84040d34339">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.6.0_569d37107ba4d5a4b8047b035884a3c80e95ad8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.5/571f4e0451db64a7b41dbeb5f2503986fe5acdb4/dagger-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="571f4e0451db64a7b41dbeb5f2503986fe5acdb4">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/dagger-2.5_ce8c98f0ffe92c80efd94c673e4bcef7c9395459.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kyungjoo/yolo-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
+        <dex dex="/Users/kyungjoo/yolo-android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-9.6.0_865bd9dfe3a47da9f3e1fa2df7a9494c1e4aeda6.jar" />
+    </item>
+
+</items>

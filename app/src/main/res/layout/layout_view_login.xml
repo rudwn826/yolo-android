@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable name="presenter" type="kr.co.triggers.yolo.layer.login.LoginPresenter"/>
+
+    </data>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minWidth="180dp"
+            android:minHeight="40dp"
+            android:orientation="vertical"
+            android:background="@color/color_primary_blue"
+            android:clickable="true"
+            android:onClick="@{() -> presenter.login()}">
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/splashView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="kr.co.triggers.yolo.layer.login.splash.SplashView"
+            tools:layout="@layout/layout_fragment_splash" />
+
+    </FrameLayout>
+
+</layout>

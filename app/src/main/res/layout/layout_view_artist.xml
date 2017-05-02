@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable name="artist" type="kr.co.triggers.yolo.domain.Artist"/>
+        <variable name="presenter" type="kr.co.triggers.yolo.layer.artist.ArtistPresenter"/>
+
+    </data>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/app_background_color"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/buttonBack"
+                    android:layout_width="@dimen/toolbar_command_size"
+                    android:layout_height="@dimen/toolbar_command_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/toolbar_command_margin"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <ImageView
+                    android:id="@+id/buttonLike"
+                    android:layout_width="@dimen/toolbar_command_size"
+                    android:layout_height="@dimen/toolbar_command_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/toolbar_command_margin"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/buttonLike"
+                    android:layout_toRightOf="@id/buttonBack"
+                    android:text="@{artist.name, default=Artist}"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/AppTheme.TextAppearance.Subtitle"/>
+
+            </RelativeLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/content_padding">
+
+                <LinearLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/app_background_color"
+                        app:cardCornerRadius="@dimen/cardview_radius">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="14dp">
+
+                            <ImageView
+                                android:id="@+id/imageViewArtistProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/artist_profile_detail_height"
+                                android:background="@android:color/black"
+                                android:scaleType="centerCrop"/>
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/card_content_space" />
+
+                            <me.kaede.tagview.TagView
+                                android:id="@+id/tagViewInformation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                app:textPaddingTop="@dimen/tag_inner_padding_updown"
+                                app:textPaddingBottom="@dimen/tag_inner_padding_updown"
+                                app:textPaddingLeft="@dimen/tag_inner_padding_side"
+                                app:textPaddingRight="@dimen/tag_inner_padding_side"/>
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/card_content_space" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/content_space" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/cardview_radius"
+                        app:cardBackgroundColor="@color/app_background_color">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/placeholder_artist_feed"
+                                android:paddingLeft="16dp"
+                                android:paddingTop="18dp"
+                                android:paddingBottom="18dp"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerViewFeeds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/card_content_space" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/content_space" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/cardview_radius"
+                        app:cardBackgroundColor="@color/app_background_color">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/placeholder_artist_tracks"
+                                android:paddingLeft="16dp"
+                                android:paddingTop="18dp"
+                                android:paddingBottom="18dp"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerViewTracks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

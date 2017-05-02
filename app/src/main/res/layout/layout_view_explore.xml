@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="kr.co.triggers.yolo.layer.explore.fragment.ExploreDetailView"/>
+
+        <variable name="presenter" type="kr.co.triggers.yolo.layer.explore.ExplorePresenter"/>
+        <variable name="view" type="kr.co.triggers.yolo.layer.explore.ExploreView"/>
+
+        <!-- view.moveToDetailView(ExploreDetailView.TRACK_DETAIL); -->
+
+    </data>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/exploreContainer"
+        android:background="@color/color_explore_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/searchTab"
+                android:focusableInTouchMode="true"
+                android:background="@color/app_background_color"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:elevation="1dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/searchBackButton"
+                    android:src="@drawable/ic_navigate_before"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edit_text"
+                    android:id="@+id/searchEditText"
+                    android:textCursorDrawable="@null"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:id="@+id/searchImage"
+                    android:src="@drawable/search"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/searchHistoryLayout"
+                android:background="@color/app_background_color"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/explore_margin_side"
+                android:layout_marginRight="@dimen/explore_margin_side"
+                android:layout_marginTop="@dimen/explore_margin_top"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/searchHistoryList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:id="@+id/searchResultLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/explore_margin_side"
+                    android:layout_marginRight="@dimen/explore_margin_side"
+                    android:layout_marginTop="@dimen/explore_margin_top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:id="@+id/resultTagLayout"
+                        android:background="@color/app_background_color"
+                        android:layout_marginBottom="@dimen/explore_margin_top"
+                        android:paddingLeft="@dimen/explore_padding_side"
+                        android:paddingRight="@dimen/explore_padding_side"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/explore_padding_top"
+                            android:paddingBottom="@dimen/explore_padding_top"
+                            android:layout_marginBottom="@dimen/explore_tab_margin">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_explore_tag"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/resultFiestaLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/app_background_color"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="@dimen/explore_margin_top"
+                        android:paddingLeft="@dimen/explore_padding_side"
+                        android:paddingRight="@dimen/explore_padding_side">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/explore_padding_top"
+                            android:paddingBottom="@dimen/explore_padding_top"
+                            android:layout_marginBottom="@dimen/explore_tab_margin">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_explore_festival"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                            <TextView
+                                android:id="@+id/buttonMoreFiesta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:textColor="@android:color/white"
+                                android:text="@string/label_more"
+                                android:clickable="true"
+                                android:onClick="@{ () -> view.moveToDetailView(ExploreDetailView.FIESTA_DETAIL) }"/>
+                        </FrameLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewFiesta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/resultArtistLayout"
+                        android:background="@color/app_background_color"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="@dimen/explore_margin_top"
+                        android:paddingLeft="@dimen/explore_padding_side"
+                        android:paddingRight="@dimen/explore_padding_side">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/explore_padding_top"
+                            android:paddingBottom="@dimen/explore_padding_top"
+                            android:layout_marginBottom="@dimen/explore_tab_margin">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_explore_artist"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                            <TextView
+                                android:id="@+id/buttonMoreArtists"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:text="@string/label_more"
+                                android:clickable="true"
+                                android:textColor="@android:color/white"
+                                android:onClick="@{ () -> view.moveToDetailView(ExploreDetailView.ARTIST_DETAIL) }"/>
+
+                        </FrameLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewArtists"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/resultTrackLayout"
+                        android:background="@color/app_background_color"
+                        android:paddingLeft="@dimen/explore_padding_side"
+                        android:paddingRight="@dimen/explore_padding_side"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/explore_padding_top"
+                            android:paddingBottom="@dimen/explore_padding_top"
+                            android:layout_marginBottom="@dimen/explore_tab_margin">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_explore_track"
+                                android:textAppearance="@style/AppTheme.TextAppearance.Legend"/>
+
+                            <TextView
+                                android:id="@+id/buttonMoreTracks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:text="@string/label_more"
+                                android:textColor="@android:color/white"
+                                android:clickable="true"
+                                android:onClick="@{ () -> view.moveToDetailView(ExploreDetailView.TRACK_DETAIL) }"/>
+
+                        </FrameLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewTracks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

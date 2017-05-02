@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">YOLO</string>
+
+    <string name="facebook_application_id">1137559296307339</string>
+    <string name="facebook_login_protocol_scheme">fb1137559296307339</string>
+
+    <string name="menu_artist_item_like">Like</string>
+    <string name="youtube_api_key">AIzaSyC6nPUVdyAQg7tN7EBL355P9v2vdmM50cM</string>
+    <string name="placeholder_fiesta_lineup">Lineup</string>
+    <string name="placeholder_fiesta_purchase">Go to Purchase</string>
+    <string name="menu_fiesta">Festivals</string>
+    <string name="menu_notification">Notifications</string>
+    <string name="menu_artist">Artists</string>
+    <string name="menu_profile">Profile</string>
+
+    <string name="label_enroll">Registration</string>
+    <string name="label_enroll_NICKNAME">NICKNAME</string>
+    <string name="label_enroll_BIRTH">BIRTH</string>
+    <string name="label_enroll_GENDER">GENDER</string>
+    <string name="label_enroll_FEMALE">Female</string>
+    <string name="label_enroll_MALE">Male</string>
+    <string name="placeholder_enroll_nickname">nickname please</string>
+    <string name="placeholder_enroll_birth">ex) 920127</string>
+    <string name="label_fiesta_preview_header_date">DATE</string>
+    <string name="label_fiesta_preview_header_name_place">NAME / PLACE</string>
+    <string name="crop_image_menu_crop">Done</string>
+
+    <string name="label_explore_tag">Tag</string>
+    <string name="label_explore_artist">Artist</string>
+    <string name="label_explore_festival">Festival</string>
+    <string name="label_explore_track">Track</string>
+    <string name="label_more">more</string>
+
+    <string name="placeholder_artist_feed">Activities</string>
+    <string name="placeholder_artist_tracks">Tracks</string>
+    <string name="profile">Profile</string>
+    <string name="placeholder_user_preferences">Interested</string>
+
+    <string name="tab_item_artists">Artists</string>
+    <string name="tab_item_tracks">Tracks</string>
+    <string name="tab_item_fiesta">Fiesta</string>
+    <string name="placeholder_user_name">Name</string>
+    <string name="placeholder_user_birth">Birth</string>
+
+    <string name="label_dialog_failure_enroll_title">Enroll Failed</string>
+    <string name="label_dialog_failure_enroll_message">Check your network connection or try again.</string>
+    <string name="label_dialog_error_name">Invalid nickname</string>
+    <string name="label_dialog_error_birth">Inbalid birth</string>
+
+</resources>

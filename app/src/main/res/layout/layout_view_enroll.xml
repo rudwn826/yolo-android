@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable name="presenter" type="kr.co.triggers.yolo.layer.enroll.EnrollPresenter"/>
+        <variable name="view" type="kr.co.triggers.yolo.layer.enroll.EnrollView"/>
+
+    </data>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/app_background_color">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_enroll"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/enroll_padding_side"
+                android:paddingRight="@dimen/enroll_padding_side"
+                android:paddingTop="@dimen/enroll_profile_padding_top"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/enrollProfile"
+                    android:layout_width="@dimen/enroll_profile"
+                    android:layout_height="@dimen/enroll_profile"
+                    android:src="@mipmap/ic_launcher"
+                    android:onClick="onSelectImageClick"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/color_primary_blue"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/label_enroll_NICKNAME"
+                    android:textAppearance="@style/AppTheme.TextAppearance.Legend"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/enroll_text_margin_top"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:id="@+id/enrollNickname"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/white"
+                    android:hint="@string/placeholder_enroll_nickname"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/label_enroll_BIRTH"
+                    android:textAppearance="@style/AppTheme.TextAppearance.Legend"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/enroll_text_margin_top"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:id="@+id/enrollBirth"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:textColor="@android:color/white"
+                    android:hint="@string/placeholder_enroll_birth"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/label_enroll_GENDER"
+                    android:textAppearance="@style/AppTheme.TextAppearance.Legend"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/enroll_text_margin_top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/enroll_sex_margin_bottom">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/enroll_sex_margin_side"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/femaleBtn"
+                            android:clickable="true"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:id="@+id/femaleTxt"
+                            android:text="@string/label_enroll_FEMALE"
+                            android:textAppearance="@style/AppTheme.TextAppearance.Content"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/fiesta_preview_separator_padding_side"
+                        android:paddingRight="@dimen/fiesta_preview_separator_padding_side"
+                        android:src="@drawable/drawable_separator_normal"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/enroll_sex_margin_side"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:id="@+id/maleBtn"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:id="@+id/maleTxt"
+                            android:text="@string/label_enroll_MALE"
+                            android:textAppearance="@style/AppTheme.TextAppearance.Content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/layout_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="@dimen/enroll_btn_margin_top"
+                    android:transitionName="layout_submit">
+
+                    <ImageView
+                        android:id="@+id/enrollBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:background="@drawable/drawable_submit_disabled" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_enroll_button_submit"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

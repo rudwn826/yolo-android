@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "593049943050",
+    "firebase_url": "https://yolo-5a8b1.firebaseio.com",
+    "project_id": "yolo-5a8b1",
+    "storage_bucket": "yolo-5a8b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593049943050:android:a545a4b57b9bb3fc",
+        "android_client_info": {
+          "package_name": "kr.co.triggers.yolo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593049943050-dgtkugufmuf7vs7eb742kac8ounkeccs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.co.triggers.yolo",
+            "certificate_hash": "E0FA7B8A26EDAE786CC44F09C856F2CC2DA3FABF"
+          }
+        },
+        {
+          "client_id": "593049943050-v68ij6v8p8o6tj96i7pu4879u3gsqud1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgF3Jagd74hu5_mgPDn4LZpMLs9cYEyFE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593049943050-v68ij6v8p8o6tj96i7pu4879u3gsqud1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
